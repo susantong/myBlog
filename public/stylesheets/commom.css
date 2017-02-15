@@ -1,0 +1,36 @@
+//.hide类
+.hide {
+	display: none;
+}
+
+//.tip图标类
+.form-group .tip {
+	margin-top: 8px;
+}
+
+//distance
+.distance {
+	margin-top: 20px;
+}
+
+.nwrap {
+	word-wrap: break-word;
+}
+
+.nowp {
+	text-indent: 2em;
+	word-wrap: break-word;
+	position: relative; 
+	line-height: 20px; 
+	max-height: 156px;
+	overflow: hidden;
+}
+
+.nowp::after {
+	content: "..."; 
+	position: absolute; bottom: 0; right: 0; padding-left: 40px;
+	background: -webkit-linear-gradient(left, transparent, #fff 55%);
+	background: -o-linear-gradient(right, transparent, #fff 55%);
+	background: -moz-linear-gradient(right, transparent, #fff 55%);
+	background: linear-gradient(to right, transparent, #fff 55%);
+}

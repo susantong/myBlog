@@ -1,0 +1,55 @@
+  <% include header.html %>
+ </head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <form role="form" method="post">
+          <div class="form-group">
+            <label for="username">用户名：</label>
+            <input type="text" class="form-control" id="username" placeholder="输入你的用户名" name="username">
+            <span class="tip hide" id="username-tip">请输入你的用户名,不超过10位,只能是以字母开头,可以为数字、字母、下划线</span>
+          </div>
+          <div class="form-group">
+            <label for="password">密码：</label>
+            <input type="password" class="form-control" id="password" placeholder="输入你的密码" name="password">
+            <span class="tip hide" id="password-tip">请输入你的密码，不超过10位,只能为数字、字母、下划线</span>
+          </div>
+          <div class="form-group">
+            <label for="pwaga">确认密码：</label>
+            <input type="password" id="pwaga" class="form-control" placeholder="请再次确认密码">
+            <span class="tip hide" id="pwaga-tip">请再次确认密码</span>
+          </div>
+          <div class="form-group">
+            <label for="pwaga">性别：</label>
+            男&nbsp;<input type="radio" name="sex" checked="checked" id="sex">&nbsp;&nbsp;
+            女&nbsp;<input type="radio" name="sex">
+          </div>
+          <div class="form-group">
+            <label for="pwaga">描述：</label> <br />
+            <textarea class="description" cols="54" rows="10" id="text" placeholder="请输入描述。。。"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="check">验证码：</label>
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" id="message" class="form-control" placeholder="请输入验证码">
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <canvas id="check" class="hide" width="100" height="30"></canvas>
+              </div>    
+            </div>
+            <span class="tip hide" id="check-tip">请输入验证码,点击图片进行切换</span>
+          </div>
+          
+          <button type="button" class="btn btn-default" id="submit">注册</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<% include footer.html %>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>
+

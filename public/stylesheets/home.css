@@ -1,0 +1,15 @@
+.distance {
+	margin-top: 20px;
+}
+
+.distance-left {
+	margin-left: 50px;
+}
+
+.user {
+	line-height: 50px;
+}
+
+.pointer {
+	cursor: pointer;
+}
